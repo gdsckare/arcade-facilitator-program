@@ -7,9 +7,13 @@ body {
 }
 
 .navbar-brand{
-    width:45%;
+    width:70%;
 }
-
+@media (min-width:768px){
+    .navbar-brand{
+        width:40%;
+    }
+}
 .nav-logo {
     max-width: 100%;
     height: auto;
@@ -23,7 +27,7 @@ body {
 }
 
 .chapter-name {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 .follow-us-icon-container {
@@ -39,26 +43,37 @@ body {
     font-size: 20px;
 }
 
-.bg-grey {
-    height: 40px;
-    background-color: rgba(226, 226, 226, 1);
-}
 
-.event-heading, .steps, .element {
+.element {
     font-size: 16px;
     color: #3c4043;
     margin-bottom:0px;
 }
 
-.event-heading-main {
-    margin-top: 0;
-    font-size: 1.8em;
-    font-weight: bold;
+.event-heading{
+    font-size: 20px;
+    color: #3c4043;
+    margin-bottom:0px;
+    margin-top:10px;
 }
 
-.steps {
-    font-size: 22px;
+.event-heading-main {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 12px;;
 }
+
+.image{
+    width:100%;
+}
+
+.steps{
+    font-size: 22px;
+    color: #3c4043;
+    margin-bottom:0px;
+}
+
 
 .element {
     color: black;
@@ -68,6 +83,7 @@ body {
 .copyfield {
     max-width: 100%;
     border-radius: 5px;
+    font-size:16px;
 }
 
 .btn-dark{
@@ -96,7 +112,7 @@ body {
 }
 
 .link:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .paragraph {
@@ -110,10 +126,23 @@ body {
 
 @media (min-width: 750px) {
     .chapter-name {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .arcade-banner {
         border-radius: 0px;
     }
 }
 
+.contact{
+    font-size:24px;
+}
+
+.sub-title{
+    font-size:20px;
+    font-style: italic;
+}
+
+.para{
+    margin-bottom: 5px;
+    font-size:18px;
+}
