@@ -1,40 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body{
+body {
     font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-logo{
-    max-width:300px;
+.navbar-brand{
+    width:45%;
 }
 
-.banner-img,
-.arcade-banner{
-    height:auto;
-    border-radius:20px;
+.nav-logo {
+    max-width: 80%;
+    height: auto;
 }
 
-.chapter-name{
-    font-size:1.5em;
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
-@media (min-width:750px) {
-    .chapter-name{
-        font-size:3em;
-    }
+
+.chapter-name {
+    font-size: 1.5em;
 }
-@media (min-width:750px){
-    .arcade-banner{
-        border-radius:0px;
-    }
-}
+
 .follow-us-icon-container {
     background-color:transparent;
     width: 35px;
     height: 35px;
     border-radius: 40px;
-    padding:7px 0px 7px 8px;
+    padding:7px 10px 7px 8px;
     border:solid 1px black;
 }
 .icon {
@@ -42,45 +39,44 @@ body{
     font-size: 20px;
 }
 
-.bg-grey{
-    height:40px;
-    background-color:rgba(226, 226, 226, 1);
+.bg-grey {
+    height: 40px;
+    background-color: rgba(226, 226, 226, 1);
 }
 
-.event-heading{
-    font-size:16px;
+.event-heading, .steps, .element {
+    font-size: 16px;
     color: #3c4043;
     margin-bottom:0px;
 }
 
-#section-2{
-    padding-bottom:100px;
+.event-heading-main {
+    margin-top: 0;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
-.event-headding-main{
-    margin-top:0px;
-    font-size:2.5em;
-    font-weight:bold;
+.steps {
+    font-size: 22px;
 }
 
-.steps{
-    font-size:22px;
+.element {
+    color: black;
+    font-size: 18px;
 }
 
-.element{
-    color:black;
-    font-size:18px;
-}
-
-.copyfield{
-    display: flex;
-    align-items: center;
-    background-color: #000000;
+.copyfield {
+    max-width: 100%;
     border-radius: 5px;
 }
 
-#link{
-    width: 450px;
+.btn-dark{
+    background-color:black;
+    height:30px;
+}
+
+#link {
+    max-width: 100%;
     padding: 6px 10px;
     border: 1px solid #212121;
     background-color: #fff;
@@ -88,25 +84,36 @@ body{
     font-size: 16px;
     overflow-x: scroll;
 }
-#link::-webkit-scrollbar{
+
+#link::-webkit-scrollbar {
     display: none;
 }
 
-#copy-btn{
+#copy-btn {
     color: #fff;
     padding: 0px 20px;
     cursor: pointer;
 }
 
-.link:hover{
-    text-decoration:none;
+.link:hover {
+    text-decoration: none;
 }
 
-.paragraph{
-    margin-bottom:6px;
+.paragraph {
+    margin-bottom: 6px;
 }
 
-.footer{
-    height:25px;
-    background-color:rgb(205, 204, 204);
+.footer {
+    height: 25px;
+    background-color: rgb(205, 204, 204);
 }
+
+@media (min-width: 750px) {
+    .chapter-name {
+        font-size: 3em;
+    }
+    .arcade-banner {
+        border-radius: 0px;
+    }
+}
+
